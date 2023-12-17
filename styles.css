@@ -44,9 +44,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
 
 
 
-.section-3 {
-    background-color: brown;
-}
+
 /* -------------------------------2.Typography----------------------- */
 
 button, input {
@@ -64,7 +62,7 @@ h1 {
 
 /* --------------- 3.1 Reusables ----------------------- */
 .outer-container {
-    border: 2px solid pink;
+    /*border: 2px solid pink;*/
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -73,7 +71,7 @@ h1 {
 }
 
 .inner-container {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink:1;
@@ -91,8 +89,9 @@ img {
 
 /* --------------- 4.1 Header ------------------------- */
 .header-navigation {
-    background-color: var(--blue);
-    border: 5px dashed black;
+    background: rgb(87,34,205);
+    background: radial-gradient(circle, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 100%);100%);
+    /*border: 5px dashed black;*/
     display: flex;
     justify-content: flex-end;
 
@@ -100,12 +99,12 @@ img {
 }
 
 .header-navigation ul {
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     display: flex;
     width: 40%;
     justify-content: space-around;
     list-style: none;
-    padding: 10px 0
+    padding: 50px 0
 }
 .header-navigation a {
     color:white;
@@ -115,8 +114,10 @@ img {
 }
 
 .outer-container.header-section {
-    background-color: var(--blue);
+    background: rgb(87,34,205);
+    background: radial-gradient(circle, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 100%);100%);
     display: flex;
+
 
 }
 
@@ -126,7 +127,7 @@ img {
     flex-direction:column;
     align-items:center;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 100px 0 0 50px;
 
 }
 
@@ -173,7 +174,7 @@ margin-bottom: 100px;
     align-items:center;
     text-align: center;
     font-size: 18px;
-    font-weight: 300px;
+    font-weight: lighter;
     /*margin:50px;*/
     padding:80px 0 20px 0;
     color:var(--purple)
@@ -197,12 +198,14 @@ margin-bottom: 100px;
     font-family: 'Roboto', sans-serif;
     color:var(--standard);
     font-size:1.2rem;
-    margin-top:100px;
+    /*margin-top:20px;*/
+    padding: 50px;
+    font-weight: normal;
 }
 /* --------------- 4.3 Magazines ------------------- */
 /*------Rolling Stone_____*/
 .outer-container.section-2 {
-    border: 5px dotted red;
+    /*border: 5px dotted red;*/
     display: flex;
     background-color: var(--light-gray);
 
@@ -210,9 +213,11 @@ margin-bottom: 100px;
 
 .inner-container.section-2 {
 background-color: var(--light-gray);
-    border:4px solid deeppink;
+    /*border:4px solid deeppink;*/
     display:flex;
     flex-direction:column;
+    column-gap:50px;
+    row-gap:80px;
   /*justify-content:center;*/
     text-align: left;
     font-size: 1rem;
@@ -224,14 +229,15 @@ background-color: var(--light-gray);
 }
 
 .inner-container-wrapper.rolling-stone {
-    border:5px dotted blue;
+    /*border:5px dotted blue;*/
     display:flex;
     /*justify-content: space-between;*/
     width:1200px;
+
 }
 
 .inner-container-text.rolling-stone {
-    border: 4px dashed yellow;
+    /*border: 4px dashed yellow;*/
     padding:10%;
     display:flex;
     flex-direction:column;
@@ -250,23 +256,26 @@ background-color: var(--light-gray);
 
 
 span {
-    border: 5px solid pink;
+    /*border: 5px solid pink;*/
     width:100%;
     display:flex;
     flex-basis:800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+
 }
 
 /*------Variety_____*/
 
 .inner-container-wrapper.variety {
-    border:5px dotted blue;
+    /*border:5px dotted blue;*/
     display:flex;
     /*justify-content: space-between;*/
     width:1200px;
 }
 
 .inner-container-text.variety {
-    border: 4px dashed yellow;
+    /*border: 4px dashed yellow;*/
     padding:10%;
     display:flex;
     flex-direction:column;
@@ -285,10 +294,11 @@ span {
 
 
 span {
-    border: 5px solid pink;
+    /*border: 5px solid pink;*/
     width:100%;
     display:flex;
     flex-basis:800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -297,14 +307,14 @@ span {
 
 /*------Worth_____*/
 .inner-container-wrapper.worth {
-    border:5px dotted blue;
+    /*border:5px dotted blue;*/
     display:flex;
     /*justify-content: space-between;*/
     width:1200px;
 }
 
 .inner-container-text.worth {
-    border: 4px dashed yellow;
+    /*border: 4px dashed yellow;*/
     padding:10%;
     display:flex;
     flex-direction:column;
@@ -323,14 +333,132 @@ span {
 
 
 span {
-    border: 5px solid pink;
+    /*border: 5px solid pink;*/
     width:100%;
     display:flex;
     flex-basis:800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* --------------- 4.4 table ------------------- */
+/* --------------- 4.4 grid ------------------- */
+
+.outer-container.section-3 {
+    /*border: 5px dotted red;*/
+    display: flex;
+
+}
+
+.inner-container.section-3 {
+    /*border:4px solid deeppink;*/
+    flex-basis: 1000px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    row-gap: 10px;
+    justify-content: space-evenly;
+    color:var(--standard);
+
+}
+
+.grid-image {
+    /*border:1px solid var(--purple);*/
+    flex-basis:300px;
+    width:50%;
+    padding:20px;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.icon {
+    width: 60px;
+    margin: 10px;
+}
+
 /* --------------- 4.5 form ------------------- */
+.outer-container.section-4{
+    /*border: 4px dotted red;*/
+    background: rgb(87,34,205);
+    background: radial-gradient(circle, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 100%);100%);
+    display:flex;
+    justify-content:center;
+    align-content: center;
+}
 
+.inner-container.section-4{
+    /*border:3px solid yellow;*/
+    color:white;
+    margin: 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+    font-family:'Roboto',sans-serif;
+}
 
-/* ------------------------------- 5. Media Queries -------------------- */
+/*.inner-container-text.section-4.form-wrapper {*/
+/*    border:5px solid teal;*/
+/*    display:flex;*/
+
+/*}*/
+
+.submit-question {
+    display:flex;
+    /*border:4px solid deeppink;*/
+    flex-direction: column;
+    height:500px;
+    width:800px;
+    margin: 50px;
+    justify-content: space-around;
+
+}
+
+form input {
+    height:50px;
+}
+
+form textarea {
+    height: 250px;
+}
+.submit-button {
+    width:230px;
+    border-radius: 75px;
+    background-color: var(--pink);
+    border: none;
+    padding: 20px;
+    font-family:'Roboto', sans-serif;
+    font-size: .85em;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    align-self: center
+    /*margin-bottom: 100px;*/
+}
+/*-------footer___________*/
+
+footer {
+    /*border:3px dashed yellow;*/
+    display: flex;
+    background-color: var(--standard);
+    color:white;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size:.8rem;
+}
+/* ----------- 5. Media Queries -------------- */
+/*mobile*/
+@media screen and (max-width: 576px)
+
+/*----tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+
+/*small desktop*/
+
+@media screen and (min-width:1024px) and (max-width: 1199px)
+/*_-----large desktop*/
+
+@media screen and (min-width: 1200px)
