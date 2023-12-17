@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 /*Paars #5722CD;
 Blauw #4845E4;
 Roze #ED4385;
@@ -9,6 +7,8 @@ Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services")
 Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
 Grijs #7A7A7A (voor de service-tegel tekst);
 */
+
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -23,10 +23,9 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     5. Media Queries
 ////////////////////////*/
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
+/* ------------------------------- 1. Global Styles-------------------------------- */
 
 :root {
-    --primary-text:#0C0C0C;
     --light-purple: #F2F0FF;
     --purple: #5722CD;
     --blue: #4845E4;
@@ -35,176 +34,140 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     --light-gray: #F3F6F9;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primary-text)
-
+.section-1 {
+    background-color: red;
 }
 
+.section-2 {
+    background-color:orange ;
+}
 
-
-/* ------------------------------- 2. Typography ----------------------------------- */
+.section-3 {
+    background-color: brown;
+}
+/* -------------------------------2.Typography----------------------- */
 
 button, input {
     font-family: inherit;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Merriweather', Serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 1.5;
 }
 
-
-/* ------------------------------- 3. Layout --------------------------------------- */
+/* ------------------------------- 3. Layout ------------------------------ */
 
 /* --------------- 3.1 Reusables ----------------------- */
-
 .outer-container {
+    border: 2px solid pink;
+    width: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
-    border: 2px dashed red;
+
 }
 
 .inner-container {
-    flex-basis: 750px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-    border: 2px solid yellow;
-    /*height: 400px;*/
-    align-self: center;
-    /*margin-bottom: 80px;*/
+    border: 1px dotted black;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink:1;
+    padding: 20px 0;
+    margin: 0 12px;
+
+
 }
 
-/*.main-container {*/
-/*    display:flex;*/
-/*    flex-diretion: column;*/
-/*}*/
 /* --------------- 3.2 Other --------------------------- */
-img {
-    width: 100%;
-}
+/*img {*/
+/*    width: 100%;*/
+/*}*/
 /* ------------------------------- 4. Areas ---------------------------------------- */
-/*4.1 Section 1****************/
-
 
 /* --------------- 4.1 Header ------------------------- */
-header {
+.header-navigation {
     background-color: var(--blue);
-    color: white;
-}
-
-.header-navigation{
-    border: 2px solid green;
+    border: 5px dashed black;
     display: flex;
-   width:100%;
     justify-content: flex-end;
-    padding: 40px 30px;
-
 
 
 }
+
 .header-navigation ul {
-    border: 2px  dashed orange;
+    border: 5px solid red;
     display: flex;
-    width: 400px;
+    width: 40%;
     justify-content: space-around;
     list-style: none;
-
-
+    padding: 10px 0
 }
 .header-navigation a {
-    color: white;
+    color:white;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-   font-size: 1rem;
+    font-family:'Roboto', sans-serif;
+    font-size:1rem;
+}
 
+.outer-container.header-section {
+    background-color: var(--blue);
+    display: flex;
 
 }
 
-
-
-.header-content-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.inner-container.header-section {
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     text-align: center;
-    line-height: 1.5;
+    padding: 20px 0 0 0;
 
 }
 
 .header-byline {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    padding: 20px 0;
 }
 
-.work-together-button{
+.work-together-button {
+    width:230px;
+    border-radius: 75px;
     background-color: var(--pink);
     border: none;
-    color: white;
     padding: 20px;
-    text-align: center;
-    border-radius: 50px;
-    width:26%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
+    font-family:'Roboto', sans-serif;
+    font-size: .85em;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+margin-bottom: 100px;
 
 }
 
 .header-image {
-    width:10%;
-    margin-top:50px;
-}
+    display:flex;
+    align-content: flex-end;
 
+}
 /* --------------- 4.2 Introduction ------------------- */
 
-.outer-container.section-1 {
-    color: var(--purple);
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 300;
-    height: 600px;
 
 
+/* --------------- 4.3 Magazines ------------------- */
+/* --------------- 4.4 table ------------------- */
+/* --------------- 4.5 form ------------------- */
 
 
-}
-
-.inner-container.section-1{
-    /*align-self: center;*/
-
-}
-
-.have-a-question {
-    color: var(--primary-text);
-    margin-top: 40px;
-    font-family: 'Roboto' , sans-serif;
-    font-weight: 600;
-}
-
-    .question-link {
-        text-decoration: none;
-    }
-
-/*-------------------------------4.3 rolling stone magazines____________*/
-
-/*.inner-container-wrapper {*/
-/*    border: 2px solid blue;*/
-/*    display:flex;*/
-/*    flex-direction: column;*/
-/*}*/
-/* ------------------------------- 5. Media Queries -------------------------------- */
+/* ------------------------------- 5. Media Queries -------------------- */
